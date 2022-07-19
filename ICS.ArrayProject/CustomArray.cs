@@ -5,7 +5,7 @@
         public static int[] СonvertArrays(int[] firstArray, int[] sercondArray)
         {
             int[] result = new int[sercondArray.Length];
-            List<int> listOfSumSergents = new List<int>();
+            List<int> listOfSumSegments = new List<int>();
             int sumSegment = default;
             bool isFound = false;
 
@@ -15,7 +15,7 @@
                 {
                     if (sercondArray[i] > firstArray[j] && isFound == true)
                     {
-                        listOfSumSergents.Add(sumSegment);
+                        listOfSumSegments.Add(sumSegment);
                         sumSegment = default;
                         isFound = false;
                     }
@@ -31,14 +31,14 @@
 
                     if (j + 1 == firstArray.Length && isFound == true)
                     {
-                        listOfSumSergents.Add(sumSegment);
+                        listOfSumSegments.Add(sumSegment);
                         sumSegment = default;
                         isFound = false;
                     }
                 }
 
-                result[i] = GetMaxNumberInList(listOfSumSergents);
-                listOfSumSergents.Clear();
+                result[i] = GetMaxNumberInList(listOfSumSegments);
+                listOfSumSegments.Clear();
             }
 
             return result;

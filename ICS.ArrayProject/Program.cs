@@ -2,8 +2,8 @@
 
 using ICS.ArrayProject;
 
-var firstArray = new int[] {-11,1,9,1,10,1,3,1,4,1,6,-11 };
-var secondArray = new int[] {  0, 10 , -100 };
+var firstArray = new int[] { };
+var secondArray = new int[] {  11 , -11};
 
 var result = CustomArray.СonvertArrays(firstArray, secondArray);
 
