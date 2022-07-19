@@ -18,7 +18,7 @@
                         isFound = true;
                         sumSegment += firstArray[j];
                     }
-                    else if (isFound == true)
+                    else if (isFound == true && (sercondArray[i] <= firstArray[j]))
                     {
                         sumSegment += firstArray[j];
                     }

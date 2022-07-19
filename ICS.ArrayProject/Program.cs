@@ -2,7 +2,7 @@
 
 using ICS.ArrayProject;
 
-var firstArray = new int[] { 8,5,5, 5, 3, 5, 14 };
+var firstArray = new int[] { 5,-11 };
 var secondArray = new int[] { 5 };
 
 var result = CustomArray.СonvertArrays(firstArray, secondArray);
