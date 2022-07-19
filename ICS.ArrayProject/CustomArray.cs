@@ -28,6 +28,7 @@
                     {
                         sumSegment += firstArray[j];
                     }
+
                     if (j + 1 == firstArray.Length && isFound == true)
                     {
                         listOfSumSergents.Add(sumSegment);
