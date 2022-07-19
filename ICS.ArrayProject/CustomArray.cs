@@ -17,6 +17,13 @@
                     {
                         isFound = true;
                         sumSegment += firstArray[j];
+
+                        if (j + 1 == firstArray.Length)
+                        {
+                            listOfSumSergents.Add(sumSegment);
+                            sumSegment = default;
+                            isFound = false;
+                        }
                     }
                     else if (isFound == true && (sercondArray[i] <= firstArray[j]))
                     {
