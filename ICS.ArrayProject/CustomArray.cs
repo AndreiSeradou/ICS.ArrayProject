@@ -22,7 +22,7 @@
                     {
                         sumSegment += firstArray[j];
                     }
-                    if ((sercondArray[i] > firstArray[j] && isFound == true) || (j + 1 == firstArray.Length && isFound == true))
+                    else if ((sercondArray[i] > firstArray[j] && isFound == true) || (j + 1 == firstArray.Length && isFound == true))
                     {
                         listOfSumSergents.Add(sumSegment);
                         sumSegment = default;
