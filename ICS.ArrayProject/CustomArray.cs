@@ -13,23 +13,22 @@
             {
                 for (int j = 0; j < firstArray.Length; j++)
                 {
-                    if (sercondArray[i] <= firstArray[j] && isFound == false)
+                    if (sercondArray[i] > firstArray[j] && isFound == true)
+                    {
+                        listOfSumSergents.Add(sumSegment);
+                        sumSegment = default;
+                        isFound = false;
+                    }
+                    else if (sercondArray[i] <= firstArray[j] && isFound == false)
                     {
                         isFound = true;
                         sumSegment += firstArray[j];
-
-                        if (j + 1 == firstArray.Length)
-                        {
-                            listOfSumSergents.Add(sumSegment);
-                            sumSegment = default;
-                            isFound = false;
-                        }
                     }
-                    else if (isFound == true && (sercondArray[i] <= firstArray[j]))
+                    else if (isFound == true)
                     {
                         sumSegment += firstArray[j];
                     }
-                    else if ((sercondArray[i] > firstArray[j] && isFound == true) || (j + 1 == firstArray.Length && isFound == true))
+                    if (j + 1 == firstArray.Length && isFound == true)
                     {
                         listOfSumSergents.Add(sumSegment);
                         sumSegment = default;
